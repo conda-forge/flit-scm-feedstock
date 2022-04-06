@@ -1,17 +1,17 @@
 {% set name = "flit-scm" %}
-{% set version = "1.3.1" %}
+{% set version = "1.4.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/py3/{{ name[0] }}/{{ name }}/flit_scm-{{ version }}-py3-none-any.whl
-  sha256: ec0c63cee7a109ea38d710ee5ad9ea6b95efd6861ee076b91aae5a0cb4fb7229
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/flit_scm-{{ version }}.tar.gz
+  sha256: 4255d59898416891010144c96b1fe53274262224e285afbc6426c1f5024a9b1e
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install --no-deps --ignore-installed flit_scm-{{ version }}-py3-none-any.whl
+  script: {{ PYTHON }} -m pip install . -vv
   number: 0
 
 requirements:
