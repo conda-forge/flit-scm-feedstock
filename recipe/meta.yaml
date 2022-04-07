@@ -21,7 +21,7 @@ requirements:
     - pip
     - setuptools_scm 6.4.2
     - tomli >=2,<3
-run:
+  run:
     - python >=3.6
     - flit-core 3.5.0
     - setuptools_scm 6.4.2
