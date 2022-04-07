@@ -20,12 +20,12 @@ requirements:
     - flit-core 3.5.0
     - pip
     - setuptools_scm 6.4.2
-    - toml 0.10.2
-  run:
+    - tomli >=2,<3
+run:
     - python >=3.6
     - flit-core 3.5.0
     - setuptools_scm 6.4.2
-    - toml 0.10.2
+    - tomli >=2,<3
 test:
   imports:
     - flit_scm
