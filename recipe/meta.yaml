@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/flit_scm-{{ version }}.tar.gz
-  sha256: 4255d59898416891010144c96b1fe53274262224e285afbc6426c1f5024a9b1e
+  sha256: 15d9ea75cf74ddbeea85ac112482e2b020969bb41180d2b19d8301a24220cad3
 
 build:
   noarch: python
