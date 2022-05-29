@@ -1,5 +1,5 @@
 {% set name = "flit-scm" %}
-{% set version = "1.4.1" %}
+{% set version = "1.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -17,15 +17,15 @@ build:
 requirements:
   host:
     - python >=3.6
-    - flit-core 3.5.0
+    - flit-core >=3.5.0,<4
     - pip
-    - setuptools_scm 6.4.2
-    - toml 0.10.2
+    - setuptools_scm >=6.4.2,<7
+    - tomli
   run:
     - python >=3.6
-    - flit-core 3.5.0
-    - setuptools_scm 6.4.2
-    - toml 0.10.2
+    - flit-core >=3.5.0,<4
+    - setuptools_scm >=6.4.2,<7
+    - tomli
 test:
   imports:
     - flit_scm
@@ -48,3 +48,5 @@ about:
 extra:
   recipe-maintainers:
     - xylar
+    - WillDaSilva
+
