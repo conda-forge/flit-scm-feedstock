@@ -1,5 +1,5 @@
 {% set name = "flit-scm" %}
-{% set version = "1.5.0" %}
+{% set version = "1.6.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/flit_scm-{{ version }}.tar.gz
-  sha256: fd0c704375b4424152caced0584cebe4131ccdc236a239dd1a055a80ee935f70
+  sha256: 6feb1334be1f31616ffb6d54485fdcd2d86796db304e126a137510139e90745c
 
 build:
   noarch: python
@@ -17,15 +17,15 @@ build:
 requirements:
   host:
     - python >=3.6
-    - flit-core 3.5.0
+    - flit-core >=3.5.0,<4
     - pip
-    - setuptools_scm 6.4.2
-    - tomli >=2,<3
+    - setuptools_scm >=6.4.2,<7
+    - tomli
   run:
     - python >=3.6
-    - flit-core 3.5.0
-    - setuptools_scm 6.4.2
-    - tomli >=2,<3
+    - flit-core >=3.5.0,<4
+    - setuptools_scm >=6.4.2,<7
+    - tomli
 test:
   imports:
     - flit_scm
