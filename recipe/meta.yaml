@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/flit_scm-{{ version }}.tar.gz
-  sha256: 4255d59898416891010144c96b1fe53274262224e285afbc6426c1f5024a9b1e
+  sha256: fd0c704375b4424152caced0584cebe4131ccdc236a239dd1a055a80ee935f70
 
 build:
   noarch: python
@@ -49,4 +49,3 @@ extra:
   recipe-maintainers:
     - xylar
     - WillDaSilva
-
