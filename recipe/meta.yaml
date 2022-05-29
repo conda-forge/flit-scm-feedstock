@@ -1,5 +1,5 @@
 {% set name = "flit-scm" %}
-{% set version = "1.6.1" %}
+{% set version = "1.6.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/flit_scm-{{ version }}.tar.gz
-  sha256: 15d9ea75cf74ddbeea85ac112482e2b020969bb41180d2b19d8301a24220cad3
+  sha256: 6feb1334be1f31616ffb6d54485fdcd2d86796db304e126a137510139e90745c
 
 build:
   noarch: python
